@@ -1,0 +1,28 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+p{
+    font: 24px;
+    line-height: 28px;
+}
+
+a{
+    text-decoration:none;
+    color:rgba(25, 98, 255, 0.938);
+    font:24px;
+    text-align: right;
+}
+
+
+body
+{
+    margin-left: 15%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding:0;
+    background:white;
+    height:100%;
+    width:70%;
+}
