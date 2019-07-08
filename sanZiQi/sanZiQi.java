@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exam09{
+public class sanZiQi{
 
     public static void main(String[] args){
 
