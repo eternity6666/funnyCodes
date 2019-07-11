@@ -1,14 +1,16 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int get()
 {
-    return abs(random() % 100);
+    return abs(rand() % 100);
 }
 
 int main()
 {
-    int n = 22;
+    int n;
+    cin >> n;
+    srand(int(time(0)));
     while(n--)
     {
         int a, b;
@@ -21,7 +23,7 @@ int main()
                 a = get();
                 b = get();
             }
-            cout << a << " + " << b << " = " << endl << endl;
+            cout << a << " + " << b << " = " << endl;
         }
         else
         {
@@ -30,7 +32,7 @@ int main()
                 a = get();
                 b = get();
             }
-            cout << a << " - " << b << " = " << endl << endl;
+            cout << a << " - " << b << " = " << endl;
         }
     }
 }
