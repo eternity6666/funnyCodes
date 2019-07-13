@@ -11,7 +11,7 @@ int main()
     int n;
     cin >> n;
     srand(int(time(0)));
-    while(n--)
+    for(int i = 1; i <= n; i++)
     {
         int a, b;
         a = get();
@@ -23,7 +23,12 @@ int main()
                 a = get();
                 b = get();
             }
-            cout << a << " + " << b << " = " << endl;
+            if(a < 10)
+                cout << " ";
+            cout << a << " + ";
+            if(b < 10)
+                cout << " ";
+            cout << b << " = ";
         }
         else
         {
@@ -32,7 +37,17 @@ int main()
                 a = get();
                 b = get();
             }
-            cout << a << " - " << b << " = " << endl;
+            if(a < 10)
+                cout << " ";
+            cout << a << " - ";
+            if(b < 10)
+                cout << " ";
+            cout << b << " = ";
         }
+        if(i % 5 == 0)
+            cout << endl;
+        else
+            cout << "   ";
     }
+    return 0;
 }
